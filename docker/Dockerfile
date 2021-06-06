@@ -1,8 +1,8 @@
 FROM openjdk:8-jdk-alpine
-MAINTAINER nehalalwaniblr@gmail.com
+MAINTAINER njrtriplicity@gmail.com
 
 RUN mkdir -p /opt/app
-COPY target/*.jar /opt/app/app.jar
+ADD target/*.jar /opt/app/app.jar
 
 # Add entrypoint.sh at the root of the container
 COPY ./docker/entrypoint.sh /entrypoint.sh
@@ -10,7 +10,7 @@ COPY ./docker/entrypoint.sh /entrypoint.sh
 # Make sure entrypoint.sh is executable
 RUN chmod +x /entrypoint.sh
 
-#EXPOSE 52026
+EXPOSE 52026
 
 #Non Root User Configuration
 RUN addgroup -S -g 10001 appGrp \
