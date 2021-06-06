@@ -3,11 +3,11 @@ package com.cb.viooh.order;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class OrderApplicationTests {
 
 
-	@Test
+	//@Test
 	void contextLoads() {
 	}
 
