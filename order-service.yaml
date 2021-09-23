@@ -8,8 +8,8 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 5001
-      nodePort: 30004
+      targetPort: 5002
+      nodePort: 30005
 #  clusterIP: 10.108.155.131
   type: NodePort
 #status:

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: order
-        image: njrtriplicity/order:1.0
+        image: njrtriplicity/order:rest
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 5001          
+        - containerPort: 5002

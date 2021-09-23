@@ -10,7 +10,7 @@ COPY ./docker/entrypoint.sh /entrypoint.sh
 # Make sure entrypoint.sh is executable
 RUN chmod +x /entrypoint.sh
 
-EXPOSE 5001
+EXPOSE 5002
 
 #Non Root User Configuration
 RUN addgroup -S -g 10001 appGrp \
